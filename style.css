@@ -34,3 +34,7 @@ main {
   display: flex;
   flex-direction: column;
 }
+
+#notas {
+  display: flex;
+}
