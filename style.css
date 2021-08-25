@@ -20,14 +20,17 @@ main {
   width: 675px;
   display: flex;
   flex-direction: column;
-  display: inline-block;
-  
 }
 
 #trybewarts-forms-logo {
   height: 500px;
 }
 
-.container-flex{
+.container-flex {
   flex-direction: row;
+}
+
+#label-family {
+  display: flex;
+  flex-direction: column;
 }

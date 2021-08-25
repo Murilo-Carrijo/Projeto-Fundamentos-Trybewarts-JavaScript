@@ -23,16 +23,29 @@
           <input id="input-name" type="text" placeholder="Nome">
           <input id="input-lastname" type="text" placeholder="Sobrenome">
         </div>
-        <div class="container-flex">
-          
+        <div>
+          <input id="input-email" type="email" placeholder="Email">
+          <select name="house" id="house">
+            <option id="gitnoria-house" value="Gitnória">Gitnória</option>
+            <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+            <option id="corvinode-house" value="Corvinode">Corvinode</option>
+            <option id="pytherina-house" value="Pytherina">Pytherina</option>
+          </select>
         </div>
-        <input id="input-email" type="email" placeholder="Email">
-        <select name="house" id="house">
-          <option id="gitnoria-house" value="Gitnória">Gitnória</option>
-          <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
-          <option id="corvinode-house" value="Corvinode">Corvinode</option>
-          <option id="pytherina-house" value="Pytherina">Pytherina</option>
-        </select>
+        <label id="label-family">Qual sua família?</label>
+        <div>
+            <label for="frontend">Frontend</label>
+            <input type="radio" name="family" value="Frontend" id="frontend">
+          </div>
+          <div>
+            <label for="backend">Backend</label>
+            <input type="radio" name="family" value="Backend" id="backend">
+          </div>
+          <div>
+            <label for="fullstack">Fullstack</label>
+            <input type="radio" name="family" value="FullStack" id="fullstack">
+          </div>
+        
     </form>
     <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="logo-trybewarts-colorido">
   </main>
