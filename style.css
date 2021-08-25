@@ -17,5 +17,6 @@ main {
 }
 
 #evaluation-form {
-  width: 675px
+  display: flex;
+  width: 675px;
 }
