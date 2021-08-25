@@ -277,34 +277,34 @@ Você também pode assistir a [este](https://vimeo.com/539240375/a116a166b9) ví
 
 #### Observações técnicas:
 
-* Esta barra deve possuir a classe `header`
-* A classe `header` deve determinar que o elemento é um **flex container**
-* A classe `header` deve possuir a propriedade `background-color: rgb(50, 167, 145)`
+- Esta barra deve possuir a classe `header`
+- A classe `header` deve determinar que o elemento é um **flex container**
+- A classe `header` deve possuir a propriedade `background-color: rgb(50, 167, 145)`
 
 #### O que será verificado:
 
-* Existe um elemento com a classe `header`
-* O elemento possui a propriedade CSS `display: flex`
-* O elemento possui a propriedade CSS `background-color: rgb(50, 167, 145)`
+- Existe um elemento com a classe `header`
+- O elemento possui a propriedade CSS `display: flex`
+- O elemento possui a propriedade CSS `background-color: rgb(50, 167, 145)`
 
 ### 2. Adicione o logotipo da Trybewarts com a classe `trybewarts-header-logo` na barra superior
 
 #### Observações técnicas:
 
-* Deve existir um elemento img com a classe `trybewarts-header-logo`
-* O atributo `src` do logotipo deve apontar para `images/trybewarts-header-logo.svg`
+- Deve existir um elemento img com a classe `trybewarts-header-logo`
+- O atributo `src` do logotipo deve apontar para `images/trybewarts-header-logo.svg`
 
 #### O que será verificado:
 
-* Existe um elemento `img` com a classe `trybewarts-header-logo`
-* O elemento possui o atributo `src` apontando para `images/trybewarts-header-logo.svg`
+- Existe um elemento `img` com a classe `trybewarts-header-logo`
+- O elemento possui o atributo `src` apontando para `images/trybewarts-header-logo.svg`
 
 ### 3. Acrescente um formulário de login no canto direito da barra superior contendo os inputs de email, senha e um botão de login
 
 #### Observações técnicas:
 
-* O formulário deve ter a classe `trybewarts-login`
-* O input de **email** deverá ter o atributo `name` igual a **email** e o `placeholder` igual a **Email**
+- O formulário deve ter a classe `trybewarts-login`
+- O input de **email** deverá ter o atributo `name` igual a **email** e o `placeholder` igual a **Email**
 * O input de **senha** deverá ter o atributo `name` igual a **password** e o `placeholder` igual a **Senha**
 * O botão deverá ter o texto **"Entrar"**
 * O formulário deve ser um **flex container**
