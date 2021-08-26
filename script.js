@@ -1,8 +1,8 @@
 const email = document.querySelector('#email');
 const password = document.querySelector('#password');
 const buttonLogin = document.querySelector('#buttonLogin');
-const buttonSubmit = document.querySelector('#submit-btn');
 const agreement = document.querySelector('#agreement');
+const buttonSubmit = document.querySelector('#submit-btn');
 buttonSubmit.disabled = true;
 
 function checkLogin() {
