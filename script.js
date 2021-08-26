@@ -1,6 +1,9 @@
 const email = document.querySelector('#email');
 const password = document.querySelector('#password');
-const buttonSubmit = document.querySelector('#buttonSubmit');
+const buttonLogin = document.querySelector('#buttonLogin');
+const buttonSubmit = document.querySelector('#submit-btn');
+const agreement = document.querySelector('#agreement');
+buttonSubmit.disabled = true;
 
 function checkLogin() {
   const emailCorreto = 'tryber@teste.com';
@@ -11,4 +14,15 @@ function checkLogin() {
     alert('Email ou senha inválidos.');
   }
 }
-buttonSubmit.addEventListener('click', checkLogin);
+buttonLogin.addEventListener('click', checkLogin);
+
+agreement.addEventListener('change', (event) => {
+  if (event.currentTarget.checked) {
+    buttonSubmit.disabled = false;
+  } else {
+    buttonSubmit.disabled = true;
+  }
+});
+
+// Pesquisa feita no link abaixo
+// https://stackoverflow.com/questions/6358673/javascript-checkbox-onchange
