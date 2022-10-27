@@ -26,7 +26,7 @@ Trata-se da criação de um trabalho em dupla, onde colaborei com o [Iury Roque]
 ## Como rodar o projeto localmente
 
 1. Clone o repositório
-  <!-- * `git@github.com:Murilo-Carrijo/Projeto-Fundamentos-Pixels-Art-JavaSxript.git` -->
+  * `git@github.com:Murilo-Carrijo/Projeto-Fundamentos-Trybewarts-JavaScript.git`
   * Entre na pasta do repositório que você acabou de clonar:
     * `cd Projeto-Fundamentos-Trybewarts-JavaScript`
 
