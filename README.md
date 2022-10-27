@@ -10,7 +10,7 @@
 
 ## Descrição
 
-Trata-se da criação de um trabalho em dupla, onde colaborei com o @iuryroque para desenvolver um formulário utilizando as seguintes habilidades: 
+Trata-se da criação de um trabalho em dupla, onde colaborei com o [Iury Roque](https://github.com/iuryroque) para desenvolver um formulário utilizando as seguintes habilidades: 
 
 * Criar formulários em HTML;
 * Utilizar CSS Flexbox para criar layouts flexíveis;
