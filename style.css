@@ -54,4 +54,14 @@
 .personal-info {
   background-color: aqua;
   display: flex;
+  margin-bottom: 8px;
+}
+
+.email-house {
+  display: flex;
+  margin-bottom: 8px;
+}
+
+#house {
+  flex-grow: 1;
 }
