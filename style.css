@@ -8,3 +8,9 @@
   display: flex;
   justify-content: space-between;
 }
+
+.trybewarts-login {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
