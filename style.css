@@ -50,3 +50,8 @@
 .form-image {
   height: 500px;
 }
+
+.personal-info {
+  background-color: aqua;
+  display: flex;
+}
