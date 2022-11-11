@@ -65,3 +65,8 @@
 #house {
   flex-grow: 1;
 }
+
+.label-family {
+  display: flex;
+  flex-direction: column;
+}
