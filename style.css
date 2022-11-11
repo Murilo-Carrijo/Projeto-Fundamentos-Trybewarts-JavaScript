@@ -35,3 +35,14 @@
   justify-content: center;
   order: 2;
 }
+
+.form-container {
+  display: flex;
+  flex-basis: 675px;
+  margin: auto;
+  width: 80%;
+}
+
+.form {
+  display: flex;
+}
