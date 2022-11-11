@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -6,11 +8,30 @@
 .header {
   background-color: rgb(50, 167, 145);
   display: flex;
-  justify-content: space-between;
+  font-family: 'Dancing Script', cursive;
+  justify-content: space-evenly;
+}
+
+.header-logo {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  order: 1;
 }
 
 .trybewarts-login {
   align-items: center;
   display: flex;
   justify-content: center;
+  order: 3;
+}
+
+.header-title {
+  align-items: center;
+  color: #fffffe;
+  font-weight: 700;
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  order: 2;
 }
