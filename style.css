@@ -147,8 +147,12 @@
 }
 
 .counter {
-  background-color: rgb(148, 161, 178);
+  background-color: rgb(32, 90, 71);
+  border-radius: 4px;
+  color: rgb(255, 255, 254);
+  font-weight: 700;
   margin: 8px;
+  padding: 1px;
   text-align: center;
   width: 32px;
 }
