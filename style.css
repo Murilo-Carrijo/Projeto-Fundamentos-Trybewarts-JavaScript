@@ -146,6 +146,13 @@
   margin: 8px;
 }
 
+.counter {
+  background-color: rgb(148, 161, 178);
+  margin: 8px;
+  text-align: center;
+  width: 32px;
+}
+
 .label-infos {
   padding: 16px;
 }
