@@ -111,3 +111,11 @@
 .textarea textarea {
   margin: 8px;
 }
+
+.label-infos {
+  padding: 16px;
+}
+
+.label-infos input {
+  margin-left: 8px;
+}
