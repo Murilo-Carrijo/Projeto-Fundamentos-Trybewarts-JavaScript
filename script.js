@@ -31,7 +31,8 @@
 const inputEmail = document.getElementById('email');
 const inputPassword = document.getElementById('password');
 const buttonLogin = document.querySelector('.header-button');
-console.log(buttonLogin);
+const agreement = document.getElementById('agreement');
+console.log(agreement);
 
 const checkLogin = () => {
   const emailCorreto = 'tryber@teste.com';
@@ -51,6 +52,19 @@ const checkLogin = () => {
   });
 };
 
+const enableButton = () => {
+  const buttonSubmit = document.getElementById('submit-btn');
+
+  agreement.addEventListener('change', (event) => {
+    if (event.currentTarget.checked) {
+      buttonSubmit.disabled = false;
+    } else {
+      buttonSubmit.disabled = true;
+    }
+  });
+}
+
 window.onload = () => {
   checkLogin();
+  enableButton();
 };
