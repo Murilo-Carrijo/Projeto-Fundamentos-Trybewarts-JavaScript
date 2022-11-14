@@ -101,3 +101,13 @@
   justify-content: space-evenly;
   margin: 8px;
 }
+
+.textarea {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.textarea textarea {
+  margin: 8px;
+}
