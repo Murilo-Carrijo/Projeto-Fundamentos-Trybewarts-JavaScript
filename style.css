@@ -39,7 +39,10 @@
 .form-container {
   display: flex;
   flex-basis: 675px;
+  justify-content: space-evenly;
+  margin: auto;
   padding: 24px;
+  width: 80%;
 }
 
 .form {
@@ -49,10 +52,10 @@
 
 .form-image {
   height: 500px;
+  display: flex;
 }
 
 .personal-info {
-  background-color: aqua;
   display: flex;
   margin-bottom: 8px;
 }
@@ -69,4 +72,19 @@
 .label-family {
   display: flex;
   flex-direction: column;
+  padding: 16px;
+}
+
+.label-family label {
+  margin:  8px;
+}
+
+.label-content {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.label-content label {
+  margin: 8px;
 }
