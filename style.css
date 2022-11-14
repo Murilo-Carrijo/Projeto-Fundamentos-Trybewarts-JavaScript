@@ -9,7 +9,8 @@
   background-color: rgb(50, 167, 145);
   display: flex;
   font-family: 'Dancing Script', cursive;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  padding: 8px;
 }
 
 .header-logo {
@@ -17,6 +18,7 @@
   display: flex;
   justify-content: center;
   order: 1;
+  width: 80px;
 }
 
 .trybewarts-login {
@@ -24,6 +26,26 @@
   display: flex;
   justify-content: center;
   order: 3;
+}
+
+.trybewarts-login label {
+  margin-right: 8px;
+}
+
+.trybewarts-login label input {
+  border: none;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.header-button {
+  background-color: rgb(32, 90, 71);
+  border: none;
+  border-radius: 8px;
+  color: rgb(255, 255, 254);
+  font-weight: 700;
+  padding: 8px;
+  width: 80px;
 }
 
 .header-title {
