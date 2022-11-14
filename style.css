@@ -88,3 +88,16 @@
 .label-content label {
   margin: 8px;
 }
+
+.label-rate {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+
+}
+
+.div-rate {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 8px;
+}
