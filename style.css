@@ -82,13 +82,25 @@
   margin-bottom: 8px;
 }
 
+.personal-info label {
+  padding: 16px;
+}
+
 .email-house {
+  align-items: center;
   display: flex;
   margin-bottom: 8px;
 }
 
-#house {
-  flex-grow: 1;
+.label-email {
+  padding: 16px;
+}
+
+.select-house {
+  align-items: center;
+  height: 18px;
+  margin: 16px;
+  width: 80%;
 }
 
 .label-family {
