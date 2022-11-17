@@ -32,6 +32,9 @@ const inputEmail = document.getElementById('email');
 const inputPassword = document.getElementById('password');
 const buttonLogin = document.querySelector('.header-button');
 const agreement = document.getElementById('agreement');
+const buttonSubmit = document.getElementById('submit-btn');
+const infoSubmit = document.getElementById('info-submit'); 
+
 
 const checkLogin = () => {
   const emailCorreto = 'tryber@teste.com';
@@ -52,8 +55,6 @@ const checkLogin = () => {
 };
 
 const enableButton = () => {
-  const buttonSubmit = document.getElementById('submit-btn');
-
   agreement.addEventListener('change', (event) => {
     if (event.currentTarget.checked) {
       buttonSubmit.disabled = false;
@@ -75,8 +76,94 @@ const textareaConter = () => {
   });
 };
 
+const formatName = () => {
+  const firstName = document.getElementById('input-name');
+  const lastName = document.getElementById('input-lastname');
+  const nameElement = document.createElement('p');
+  nameElement.innerHTML = `Nome: ${firstName.value} ${lastName.value}`
+  infoSubmit.appendChild(nameElement);
+};
+
+const formatEmail = () => {
+  const email = document.getElementById('input-email');
+  const emailElement = document.createElement('p');
+  emailElement.innerHTML = `Email: ${email.value}`;
+  infoSubmit.appendChild(emailElement);
+};
+
+const formatHouse = () => {
+  const house = document.getElementById('house');
+  for (let index = 0; index < house.length; index += 1) {
+    const element = house[index];
+    if (element.selected) {
+      const houseElement = document.createElement('p');
+      houseElement.innerHTML = `Casa: ${element.value}`;
+      infoSubmit.appendChild(houseElement);
+    } 
+  }
+};
+
+const formatFamily = () => {
+  const family = document.querySelector('input[name = "family"]:checked');
+  const familyElement = document.createElement('p');
+  if (family) {
+    familyElement.innerHTML = `Família: ${family.value}`;
+  } else {
+    familyElement.innerHTML = 'Família:';
+  }
+  infoSubmit.appendChild(familyElement);
+};
+
+const formatContent = () => {
+  const content = document.querySelectorAll('input[name = "content"]:checked');
+  let contentText = 'Matérias:';
+  const contentElement = document.createElement('p');
+  for (let index = 0; index < content.length; index++) {
+    const element = content[index];
+    if (content && index === content.length -1) {
+      contentText = `${contentText} ${element.value}.`;
+    } else if (content) {
+      contentText = `${contentText} ${element.value},`;
+    }
+  }
+  contentElement.innerHTML = contentText;
+  infoSubmit.appendChild(contentElement);
+};
+
+const formatRate = () => {
+  const rate = document.querySelector('input[name = "rate"]:checked');
+  const rateElement = document.createElement('p');
+  if (rate) {
+    rateElement.innerHTML = `Avaliação: ${rate.value}`;
+  } else {
+    rateElement.innerHTML = 'Avaliação:';
+  }
+  infoSubmit.appendChild(rateElement);
+};
+
+const formatTextarea = () => {
+  const textarea = document.getElementById('textarea');
+  const textareaElement = document.createElement('p');
+  textareaElement.innerHTML = `Observações: ${textarea.value}`;
+  infoSubmit.appendChild(textareaElement);
+};
+
+const renderSubmited = () => {
+  buttonSubmit.addEventListener('click', (event) => {
+    event.preventDefault();
+    formatName();
+    formatEmail();
+    formatHouse();
+    formatFamily();
+    formatContent();
+    formatRate();
+    formatTextarea();
+  });
+};
+
 window.onload = () => {
   checkLogin();
   enableButton();
   textareaConter();
+  renderSubmited();
 };
