@@ -33,7 +33,6 @@ const inputPassword = document.getElementById('password');
 const buttonLogin = document.querySelector('.header-button');
 const agreement = document.getElementById('agreement');
 const buttonSubmit = document.getElementById('submit-btn');
-const infoSubmit = document.getElementById('info-submit'); 
 
 
 const checkLogin = () => {
@@ -76,7 +75,29 @@ const textareaConter = () => {
   });
 };
 
-const formatName = () => {
+const createSection = () => {
+  const div = document.getElementsByTagName('div');
+  const lestDiv = div.length - 1;
+  const section = document.createElement('section');
+  section.id = 'info-submit';
+  section.className = 'info-submit';
+  div[lestDiv].appendChild(section);
+
+  const infoSubmit = document.getElementById('info-submit'); 
+
+  const h1Element = document.createElement('h1');
+  h1Element.innerHTML = 'Veja as informações subetidas:';
+  infoSubmit.appendChild(h1Element);
+  formatName(infoSubmit);
+  formatEmail(infoSubmit);
+  formatHouse(infoSubmit);
+  formatFamily(infoSubmit);
+  formatContent(infoSubmit);
+  formatRate(infoSubmit);
+  formatTextarea(infoSubmit);
+};
+
+const formatName = (infoSubmit) => {
   const firstName = document.getElementById('input-name');
   const lastName = document.getElementById('input-lastname');
   const nameElement = document.createElement('p');
@@ -84,14 +105,14 @@ const formatName = () => {
   infoSubmit.appendChild(nameElement);
 };
 
-const formatEmail = () => {
+const formatEmail = (infoSubmit) => {
   const email = document.getElementById('input-email');
   const emailElement = document.createElement('p');
   emailElement.innerHTML = `Email: ${email.value}`;
   infoSubmit.appendChild(emailElement);
 };
 
-const formatHouse = () => {
+const formatHouse = (infoSubmit) => {
   const house = document.getElementById('house');
   for (let index = 0; index < house.length; index += 1) {
     const element = house[index];
@@ -103,7 +124,7 @@ const formatHouse = () => {
   }
 };
 
-const formatFamily = () => {
+const formatFamily = (infoSubmit) => {
   const family = document.querySelector('input[name = "family"]:checked');
   const familyElement = document.createElement('p');
   if (family) {
@@ -114,7 +135,7 @@ const formatFamily = () => {
   infoSubmit.appendChild(familyElement);
 };
 
-const formatContent = () => {
+const formatContent = (infoSubmit) => {
   const content = document.querySelectorAll('input[name = "content"]:checked');
   let contentText = 'Matérias:';
   const contentElement = document.createElement('p');
@@ -130,7 +151,7 @@ const formatContent = () => {
   infoSubmit.appendChild(contentElement);
 };
 
-const formatRate = () => {
+const formatRate = (infoSubmit) => {
   const rate = document.querySelector('input[name = "rate"]:checked');
   const rateElement = document.createElement('p');
   if (rate) {
@@ -141,7 +162,7 @@ const formatRate = () => {
   infoSubmit.appendChild(rateElement);
 };
 
-const formatTextarea = () => {
+const formatTextarea = (infoSubmit) => {
   const textarea = document.getElementById('textarea');
   const textareaElement = document.createElement('p');
   textareaElement.innerHTML = `Observações: ${textarea.value}`;
@@ -151,13 +172,7 @@ const formatTextarea = () => {
 const renderSubmited = () => {
   buttonSubmit.addEventListener('click', (event) => {
     event.preventDefault();
-    formatName();
-    formatEmail();
-    formatHouse();
-    formatFamily();
-    formatContent();
-    formatRate();
-    formatTextarea();
+    createSection();
   });
 };
 
