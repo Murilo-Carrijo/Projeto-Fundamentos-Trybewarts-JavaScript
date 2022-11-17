@@ -59,12 +59,11 @@
 }
 
 .form-container {
+  background-color: rgb(232, 228, 230);
   display: flex;
   flex-basis: 675px;
   justify-content: space-evenly;
-  margin: auto;
   padding: 24px;
-  width: 80%;
 }
 
 .form {
@@ -201,4 +200,22 @@
 
 .footer h3 {
   font-weight: 700;
+}
+
+.info-submit {
+  border-top: 1px solid #004643;
+  margin: auto;
+  width: 60%;
+}
+
+.info-submit h1 {
+  color: #004643;
+  font-size: 32px;
+  padding-top: 32px;
+}
+
+.info-submit p {
+  color: #004643;
+  font-size: 24px;
+  padding: 16px;
 }

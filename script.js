@@ -81,6 +81,7 @@ const createSection = () => {
   const section = document.createElement('section');
   section.id = 'info-submit';
   section.className = 'info-submit';
+  div[lestDiv].style.backgroundColor = 'rgb(232, 228, 230)';
   div[lestDiv].appendChild(section);
 
   const infoSubmit = document.getElementById('info-submit'); 
