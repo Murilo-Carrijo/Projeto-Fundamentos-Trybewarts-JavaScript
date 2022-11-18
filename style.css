@@ -5,6 +5,10 @@
   padding: 0;
 }
 
+body {
+  height: 100vh;
+}
+
 .header {
   background-color: rgb(50, 167, 145);
   display: flex;
@@ -68,7 +72,13 @@
 
 .form {
   display: flex;
+  flex-basis: 675px;
   flex-direction: column;
+}
+
+.form-title {
+  align-self: center;
+  margin: 16px;
 }
 
 .form-image {
@@ -76,9 +86,18 @@
   display: flex;
 }
 
+.input {
+  border: none;
+  border-radius: 8px;
+  padding: 8px;
+  width: 100%;
+}
+
 .personal-info {
+  align-self: center;
   display: flex;
   margin-bottom: 8px;
+  width: 80%;
 }
 
 .personal-info label {
@@ -87,19 +106,36 @@
 
 .email-house {
   align-items: center;
+  align-self: center;
   display: flex;
   margin-bottom: 8px;
+  width: 80%;
 }
 
-.label-email {
+.email-house div {
+  margin-left: 8px;
+}
+
+.label {
   padding: 16px;
+  flex-grow: 1;
+}
+
+.div-house {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 260px;
 }
 
 .select-house {
-  align-items: center;
+  background-color: rgb(255, 255, 254);
+  border: none;
+  border-radius: 8px;
   height: 18px;
-  margin: 16px;
-  width: 80%;
+  margin-left: 16px;
+  padding: 16px;
+  width: 100%;
 }
 
 .label-family {
@@ -112,27 +148,50 @@
   margin:  8px;
 }
 
-.label-content {
+.forms-checkbox {
+  align-self: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.603);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.603);
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+}
+
+.label-content {
+  flex-wrap: wrap;
   padding: 16px;
 }
 
-.label-content label {
-  margin: 8px;
+.div-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+  width: 80%;
+}
+
+.div-rate-textarea {
+  align-self: center;
+  width: 80%;
+  padding: 16px;
+}
+
+.content {
+  padding: 8px;
+  width: 33%;
 }
 
 .label-rate {
+  align-items: center;
   display: flex;
-  flex-direction: column;
+  justify-content: flex-start;
   padding: 16px;
-
 }
 
 .div-rate {
   display: flex;
   justify-content: space-evenly;
-  margin: 8px;
+  flex-grow: 1;
 }
 
 .textarea {
@@ -172,9 +231,9 @@
   color: rgb(255, 255, 254);
   font-size: 16px;
   font-weight: 700;
-  margin: 8px;
+  margin-top: 24px;
   padding: 8px;
-  width: 90%;
+  width: 100%;
 }
 
 .submit-btn:disabled {
@@ -185,9 +244,9 @@
   color: rgb(255, 255, 254);
   font-size: 16px;
   font-weight: 700;
-  margin: 8px;
+  margin-top: 24px;
   padding: 8px;
-  width: 90%;
+  width: 100%;
 }
 
 .footer {
@@ -195,7 +254,7 @@
   color: rgb(255, 255, 254);
   display: flex;
   justify-content: center;
-  padding: 16px;
+  padding: 18px;
 }
 
 .footer h3 {
