@@ -18,7 +18,7 @@ Trata-se da criação de um trabalho em dupla, onde colaborei com o [Iury Roque]
 * Construir páginas que alteram o seu layout de acordo com a orientação da tela;
 
 ⚠️
-#### Status do projeto: Csoncluído
+#### Status do projeto: Concluído
 
 ![exemplo do formulário](./pagina-principal.png)
 
