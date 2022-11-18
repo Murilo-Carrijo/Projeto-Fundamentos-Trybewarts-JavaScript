@@ -39,7 +39,7 @@
 }
 
 .header-button {
-  background-color: rgb(32, 90, 71);
+  background-color: rgb(57, 7, 209);
   border: none;
   border-radius: 8px;
   color: rgb(255, 255, 254);
@@ -166,7 +166,7 @@
 
 .submit-btn {
   align-self: center;
-  background-color: rgb(50, 167, 145);
+  background-color: rgb(57, 7, 209);
   border: none;
   border-radius: 8px;
   color: rgb(255, 255, 254);
